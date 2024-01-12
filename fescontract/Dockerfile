@@ -1,7 +1,7 @@
 FROM node:19.5.0-alpine as build-step
 WORKDIR /app
 ENV PATH /app/node_modules/.bin:$PATH
-COPY package.json package-lock.json index.html vite.config.js .gitignore .eslintrc.cjs ./
+COPY package.json package-lock.json index.html vite.config.js ./
 COPY ./src ./src
 COPY ./public ./public
 RUN npm install
