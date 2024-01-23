@@ -1,8 +1,27 @@
-# React + Vite
+# Как запускать...
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Сбилдить контейнер
+```shell
+docker build -f Dockerfile -t react-flask-app .
+```
 
-Currently, two official plugins are available:
+## Поднять контейнер на 80 порту
+```shell
+docker run -d -p 80:3000 react-flask-app
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+# Адрес для подключения через ssh
+
+```shell
+ssh root@45.153.69.218
+```
+
+# Root-pass
+
+```shell
+nP9hvSux?iwH3X
+```
+
+# Важно!!!
+## Ни в коем случае не менять расположение папок
+## Не удалять роут из фласка с путем /
