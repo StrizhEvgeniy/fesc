@@ -1,5 +1,7 @@
 # Как запускать...
 
+# Адрес сервака http://seafarers-fescontract.ru/
+
 ## Сбилдить контейнер
 ```shell
 docker build -f Dockerfile -t react-flask-app .
